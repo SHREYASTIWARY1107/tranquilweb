@@ -1,0 +1,22 @@
+<svg width="500" height="350" viewBox="0 0 500 350" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="50" y="25" width="400" height="300" rx="20" fill="#F7FAFC" stroke="#4A90E2" stroke-width="2"/>
+  <rect x="75" y="50" width="350" height="250" rx="10" fill="white" stroke="#4A90E2" stroke-width="1"/>
+  
+  <!-- AI Icon -->
+  <circle cx="250" cy="90" r="30" fill="#E6F0FF"/>
+  <path d="M235 85V95M265 85V95M240 105H260" stroke="#4A90E2" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="250" cy="90" r="25" stroke="#4A90E2" stroke-width="2" stroke-dasharray="2 2"/>
+  
+  <!-- Chat Bubbles -->
+  <rect x="100" y="140" width="180" height="40" rx="18" fill="#E6F0FF"/>
+  <rect x="220" y="190" width="180" height="40" rx="18" fill="#E6FBF8"/>
+  <rect x="100" y="240" width="180" height="40" rx="18" fill="#E6F0FF"/>
+  
+  <!-- Text Lines -->
+  <rect x="120" y="155" width="140" height="10" rx="2" fill="#4A90E2"/>
+  <rect x="240" y="205" width="140" height="10" rx="2" fill="#5ECDB6"/>
+  <rect x="120" y="255" width="140" height="10" rx="2" fill="#4A90E2"/>
+  
+  <!-- Brain Wave -->
+  <path d="M100 120C120 110 140 130 160 120C180 110 200 130 220 120C240 110 260 130 280 120C300 110 320 130 340 120C360 110 380 130 400 120" stroke="#9D8DF1" stroke-width="2" stroke-linecap="round"/>
+</svg>

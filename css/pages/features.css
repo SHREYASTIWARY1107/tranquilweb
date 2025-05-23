@@ -1,0 +1,103 @@
+/* Features Page Specific Styles */
+
+/* Feature Spotlight Animations */
+.feature-spotlight {
+  position: relative;
+  overflow: hidden;
+}
+
+.feature-spotlight::before {
+  content: '';
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, var(--primary-50) 0%, transparent 70%);
+  top: -200px;
+  right: -200px;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.feature-spotlight:nth-child(odd)::before {
+  right: auto;
+  left: -200px;
+}
+
+/* Feature Cards Animation */
+.features-grid .feature-card:nth-child(1) {
+  animation: slideUp 0.5s 0.1s ease-out both;
+}
+
+.features-grid .feature-card:nth-child(2) {
+  animation: slideUp 0.5s 0.2s ease-out both;
+}
+
+.features-grid .feature-card:nth-child(3) {
+  animation: slideUp 0.5s 0.3s ease-out both;
+}
+
+.features-grid .feature-card:nth-child(4) {
+  animation: slideUp 0.5s 0.4s ease-out both;
+}
+
+.features-grid .feature-card:nth-child(5) {
+  animation: slideUp 0.5s 0.5s ease-out both;
+}
+
+.features-grid .feature-card:nth-child(6) {
+  animation: slideUp 0.5s 0.6s ease-out both;
+}
+
+/* Feature Card Hover Effect */
+.feature-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.feature-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(74, 144, 226, 0.1) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.feature-card:hover::after {
+  opacity: 1;
+}
+
+/* Feature List Items Animation */
+@keyframes checkmarkAnimation {
+  0% { transform: scale(0); opacity: 0; }
+  50% { transform: scale(1.2); opacity: 1; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.feature-list-item i {
+  transform-origin: center;
+  animation: checkmarkAnimation 0.5s ease-out backwards;
+}
+
+.feature-spotlight:nth-child(2) .feature-list-item:nth-child(1) i { animation-delay: 0.3s; }
+.feature-spotlight:nth-child(2) .feature-list-item:nth-child(2) i { animation-delay: 0.4s; }
+.feature-spotlight:nth-child(2) .feature-list-item:nth-child(3) i { animation-delay: 0.5s; }
+.feature-spotlight:nth-child(2) .feature-list-item:nth-child(4) i { animation-delay: 0.6s; }
+
+.feature-spotlight:nth-child(3) .feature-list-item:nth-child(1) i { animation-delay: 0.3s; }
+.feature-spotlight:nth-child(3) .feature-list-item:nth-child(2) i { animation-delay: 0.4s; }
+.feature-spotlight:nth-child(3) .feature-list-item:nth-child(3) i { animation-delay: 0.5s; }
+.feature-spotlight:nth-child(3) .feature-list-item:nth-child(4) i { animation-delay: 0.6s; }
+
+.feature-spotlight:nth-child(4) .feature-list-item:nth-child(1) i { animation-delay: 0.3s; }
+.feature-spotlight:nth-child(4) .feature-list-item:nth-child(2) i { animation-delay: 0.4s; }
+.feature-spotlight:nth-child(4) .feature-list-item:nth-child(3) i { animation-delay: 0.5s; }
+.feature-spotlight:nth-child(4) .feature-list-item:nth-child(4) i { animation-delay: 0.6s; }
+
+.feature-spotlight:nth-child(5) .feature-list-item:nth-child(1) i { animation-delay: 0.3s; }
+.feature-spotlight:nth-child(5) .feature-list-item:nth-child(2) i { animation-delay: 0.4s; }
+.feature-spotlight:nth-child(5) .feature-list-item:nth-child(3) i { animation-delay: 0.5s; }
+.feature-spotlight:nth-child(5) .feature-list-item:nth-child(4) i { animation-delay: 0.6s; }

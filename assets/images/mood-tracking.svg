@@ -1,0 +1,42 @@
+<svg width="500" height="350" viewBox="0 0 500 350" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="50" y="25" width="400" height="300" rx="20" fill="#F7FAFC" stroke="#4A90E2" stroke-width="2"/>
+  <rect x="75" y="50" width="350" height="250" rx="10" fill="white" stroke="#4A90E2" stroke-width="1"/>
+  
+  <!-- Chart Grid -->
+  <line x1="100" y1="250" x2="400" y2="250" stroke="#E2E8F0" stroke-width="1"/>
+  <line x1="100" y1="200" x2="400" y2="200" stroke="#E2E8F0" stroke-width="1" stroke-dasharray="2 2"/>
+  <line x1="100" y1="150" x2="400" y2="150" stroke="#E2E8F0" stroke-width="1" stroke-dasharray="2 2"/>
+  <line x1="100" y1="100" x2="400" y2="100" stroke="#E2E8F0" stroke-width="1" stroke-dasharray="2 2"/>
+  
+  <!-- Chart Labels -->
+  <rect x="85" y="245" width="10" height="10" rx="2" fill="#4A90E2"/>
+  <rect x="85" y="195" width="10" height="10" rx="2" fill="#5ECDB6"/>
+  <rect x="85" y="145" width="10" height="10" rx="2" fill="#9D8DF1"/>
+  <rect x="85" y="95" width="10" height="10" rx="2" fill="#F97316"/>
+  
+  <!-- Mood Chart -->
+  <path d="M100 200C115 180 130 210 145 190C160 170 175 190 190 180C205 170 220 140 235 150C250 160 265 120 280 100C295 80 310 120 325 110C340 100 355 120 370 130C385 140 400 120" stroke="#4A90E2" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Sleep Chart -->
+  <path d="M100 230C115 220 130 240 145 230C160 220 175 230 190 220C205 210 220 230 235 220C250 210 265 190 280 200C295 210 310 230 325 220C340 210 355 230 370 220C385 210 400 230" stroke="#5ECDB6" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Weekly Labels -->
+  <text x="100" y="270" font-family="sans-serif" font-size="10" fill="#718096">M</text>
+  <text x="145" y="270" font-family="sans-serif" font-size="10" fill="#718096">T</text>
+  <text x="190" y="270" font-family="sans-serif" font-size="10" fill="#718096">W</text>
+  <text x="235" y="270" font-family="sans-serif" font-size="10" fill="#718096">T</text>
+  <text x="280" y="270" font-family="sans-serif" font-size="10" fill="#718096">F</text>
+  <text x="325" y="270" font-family="sans-serif" font-size="10" fill="#718096">S</text>
+  <text x="370" y="270" font-family="sans-serif" font-size="10" fill="#718096">S</text>
+  
+  <!-- Emoji Icons -->
+  <circle cx="280" cy="100" r="8" fill="#F97316"/>
+  <path d="M276 100C276 100 278 102 280 102C282 102 284 100 284 100" stroke="white" stroke-width="1" stroke-linecap="round"/>
+  
+  <circle cx="145" cy="190" r="8" fill="#9D8DF1"/>
+  <path d="M141 190C141 190 143 192 145 192C147 192 149 190 149 190" stroke="white" stroke-width="1" stroke-linecap="round"/>
+  
+  <circle cx="370" cy="130" r="8" fill="#5ECDB6"/>
+  <path d="M366 128C366 128 368 130 370 130C372 130 374 128 374 128" stroke="white" stroke-width="1" stroke-linecap="round"/>
+  <path d="M366 132H374" stroke="white" stroke-width="1" stroke-linecap="round"/>
+</svg>

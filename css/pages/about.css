@@ -1,0 +1,111 @@
+/* About Page Specific Styles */
+
+/* Mission Section Animation */
+.mission {
+  position: relative;
+  overflow: hidden;
+}
+
+.mission::before {
+  content: '';
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, var(--primary-50) 0%, transparent 70%);
+  top: -200px;
+  right: -200px;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+/* Timeline Animation */
+@keyframes fadeSlideIn {
+  from { opacity: 0; transform: translateX(-30px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeSlideInRight {
+  from { opacity: 0; transform: translateX(30px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+  animation: fadeSlideIn 0.5s ease-out both;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+  animation: fadeSlideInRight 0.5s ease-out both;
+}
+
+.timeline-item:nth-child(1) .timeline-content { animation-delay: 0.1s; }
+.timeline-item:nth-child(2) .timeline-content { animation-delay: 0.3s; }
+.timeline-item:nth-child(3) .timeline-content { animation-delay: 0.5s; }
+.timeline-item:nth-child(4) .timeline-content { animation-delay: 0.7s; }
+
+/* Values Section Animation */
+.values-grid .value-card:nth-child(1) {
+  animation: slideUp 0.5s 0.1s ease-out both;
+}
+
+.values-grid .value-card:nth-child(2) {
+  animation: slideUp 0.5s 0.2s ease-out both;
+}
+
+.values-grid .value-card:nth-child(3) {
+  animation: slideUp 0.5s 0.3s ease-out both;
+}
+
+.values-grid .value-card:nth-child(4) {
+  animation: slideUp 0.5s 0.4s ease-out both;
+}
+
+/* Value Card Hover Effect */
+.value-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.value-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(157, 141, 241, 0.1) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.value-card:hover::after {
+  opacity: 1;
+}
+
+/* SDG Section */
+.sdg {
+  position: relative;
+  overflow: hidden;
+}
+
+.sdg::after {
+  content: '';
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, var(--secondary-50) 0%, transparent 70%);
+  bottom: -100px;
+  left: -100px;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+/* Timeline Badge Animation */
+@keyframes pulseBadge {
+  0% { box-shadow: 0 0 0 0 rgba(74, 144, 226, 0.4); }
+  70% { box-shadow: 0 0 0 10px rgba(74, 144, 226, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(74, 144, 226, 0); }
+}
+
+.timeline-badge {
+  animation: pulseBadge 2s infinite;
+}
